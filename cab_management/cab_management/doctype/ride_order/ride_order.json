@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "Format:RO-{MM}-{YYYY}-{##}",
+ "creation": "2026-09-11 11:16:29.587223",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "custome_name",
+  "contact_number",
+  "pickup_time",
+  "pickup_address",
+  "status",
+  "vehicle"
+ ],
+ "fields": [
+  {
+   "fieldname": "custome_name",
+   "fieldtype": "Data",
+   "label": "Custome Name"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "pickup_address",
+   "fieldtype": "Small Text",
+   "label": "Pickup Address"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nApproved\nRejected"
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Datetime",
+   "label": "Pickup Time"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-11 12:26:46.910302",
+ "modified_by": "Administrator",
+ "module": "Cab Management",
+ "name": "Ride Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
