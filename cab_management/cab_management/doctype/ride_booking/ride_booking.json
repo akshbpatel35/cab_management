@@ -9,7 +9,11 @@
   "section_break_n1sg",
   "order",
   "amended_from",
-  "driver"
+  "driver",
+  "section_break_dwlj",
+  "items",
+  "rate",
+  "total_amount"
  ],
  "fields": [
   {
@@ -40,13 +44,33 @@
    "label": "Driver",
    "options": "Driver",
    "reqd": 1
+  },
+  {
+   "fieldname": "section_break_dwlj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Ride Booking Item"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-09-11 15:43:42.094419",
+ "modified": "2026-09-11 16:50:01.686778",
  "modified_by": "Administrator",
  "module": "Cab Management",
  "name": "Ride Booking",
