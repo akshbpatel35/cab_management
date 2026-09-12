@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_bulk_edit": 1,
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "autoincrement",
@@ -13,7 +14,10 @@
   "model",
   "year",
   "licence_plate",
-  "color"
+  "color",
+  "is_published",
+  "route",
+  "car_image"
  ],
  "fields": [
   {
@@ -47,12 +51,29 @@
    "fieldtype": "Data",
    "label": "Title",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published?"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "car_image",
+   "fieldtype": "Attach Image",
+   "label": "Car image"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-11 12:24:29.561615",
+ "modified": "2026-09-12 16:30:51.380192",
  "modified_by": "Administrator",
  "module": "Cab Management",
  "name": "Vehicle",
