@@ -9,4 +9,3 @@ class Driver(Document):
 	pass
 def before_save(self):
 	self.ful_name = f"{self.first_name} {self.last_name}"
-	
