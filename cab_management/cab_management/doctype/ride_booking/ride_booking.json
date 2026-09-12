@@ -10,6 +10,7 @@
   "order",
   "amended_from",
   "driver",
+  "vehicle",
   "section_break_dwlj",
   "items",
   "rate",
@@ -64,13 +65,20 @@
    "fieldname": "total_amount",
    "fieldtype": "Currency",
    "label": "Total Amount"
+  },
+  {
+   "fetch_from": "order.vehicle",
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-09-11 16:50:01.686778",
+ "modified": "2026-09-12 09:48:17.480644",
  "modified_by": "Administrator",
  "module": "Cab Management",
  "name": "Ride Booking",
