@@ -73,7 +73,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-12 16:30:51.380192",
+ "modified": "2026-09-14 10:33:40.900206",
  "modified_by": "Administrator",
  "module": "Cab Management",
  "name": "Vehicle",
@@ -94,6 +94,7 @@
    "write": 1
   }
  ],
+ "route": "cars",
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "show_title_field_in_link": 1,

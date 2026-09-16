@@ -1,47 +1,63 @@
-<!DOCTYPE html>
+{% extends "templates/web.html" %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ doc.title }}</title>
-
+{% block page_content %}
 
 <style>
     body {
         font-family: Arial, sans-serif;
-        margin: 40px;
         background-color: #f5f5f5;
     }
 
     .car-container {
         max-width: 700px;
-        margin: auto;
+        margin: 40px auto;
         padding: 30px;
-        background: white;
+        background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
     }
 
+    .car-container h1 {
+        margin-bottom: 10px;
+        color: #333333;
+    }
+
+    .car-container h2 {
+        margin-bottom: 20px;
+        color: #555555;
+    }
+
     .car-image {
+        display: block;
         max-width: 100%;
         height: auto;
-        margin-top: 20px;
+        margin: 20px auto;
         border-radius: 8px;
+    }
+
+    .book-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        background-color: #17a2b8;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .book-btn:hover {
+        background-color: #138496;
+        color: #ffffff;
+        text-decoration: none;
     }
 </style>
 
 
-</head>
-
-<body>
-
-
 <div class="car-container">
-
     <h1>Welcome to the Available Cars</h1>
-
     <h2>{{ doc.title }}</h2>
 
     {% if doc.car_image %}
@@ -50,10 +66,13 @@
             alt="{{ doc.title }}"
             class="car-image"
         >
+    {% else %}
+        <p>No car image available.</p>
+
     {% endif %}
 
+    <a href="/book-a-cab/new?vehicle={{doc.name }}" class="book-btn">
+        Book this Ride
+    </a>
 </div>
-
-
-</body>
-</html>
+{% endblock %}
