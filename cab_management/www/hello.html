@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <style>
+        body {
+            background: #eee;
+            font-family: Arial;
+        }
+
+        .a4 {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            padding: 20mm;
+            background: white;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #222;
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .info {
+            margin: 25px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #222;
+            color: white;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 100px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{{ my_custom_text }}</h1>
+
+<div class="a4">
+
+    <div class="header">
+        <div>
+            <h1>INVOICE</h1>
+            <p>#INV-001</p>
+        </div>
+
+        <div>
+            <b>ABC Company</b><br>
+            Ahmedabad, Gujarat<br>
+            India
+        </div>
+    </div>
+
+    <div class="info">
+        <b>Bill To:</b><br>
+        Akshay Patel<br>
+        Ahmedabad, Gujarat
+    </div>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>Web Development</td>
+            <td>1</td>
+            <td>₹20,000</td>
+            <td>₹20,000</td>
+        </tr>
+
+        <tr>
+            <td>Hosting</td>
+            <td>1</td>
+            <td>₹5,000</td>
+            <td>₹5,000</td>
+        </tr>
+    </table>
+
+    <div class="total">
+        Grand Total: ₹25,000
+    </div>
+
+    <div class="footer">
+        Thank you for your business!
+    </div>
+
+</div>
+
+</body>
+</html>
